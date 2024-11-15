@@ -12,4 +12,4 @@ jobs:
             - name: Failed step
               run: echo "I will fail"
             - name: Say goodbye
-              run: "Goodbye!"
+              run: echo "Goodbye!"
