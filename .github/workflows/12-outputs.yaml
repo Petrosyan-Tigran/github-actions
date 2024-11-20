@@ -20,7 +20,9 @@ jobs:
               run: echo $GITHUB_OUTPUT
             - name: build
               id: build
-              run: echo "status=${{inputs.build-status}}" >> "$GITHUB_OUTPUT"
+              run: |
+               echo "$GITHUB_OUTPUT"
+               echo "status=${{inputs.build-status}}" >> "$GITHUB_OUTPUT"
     deploy:
         needs: build
         runs-on: ubuntu-latest
@@ -28,5 +30,3 @@ jobs:
         steps:
             - name: Deploy
               run: echo "Deploying"
-              
-              
