@@ -17,12 +17,12 @@ on:
                 default: 17-custom-actions/react-app
                 description: "The working directory of the project to check for dependency updates"
                 required: true
-            gh-token: 
-                description: "Authentication token with repository access. Must have write access to contents and pull-requests"
-                required: true
-            debug:
-                description: "Whether the output debug messages to the console"
-                required: false
+            # gh-token: 
+            #     description: "Authentication token with repository access. Must have write access to contents and pull-requests"
+            #     required: true
+            # debug:
+            #     description: "Whether the output debug messages to the console"
+            #     required: false
 jobs:
     dependency-update: 
         runs-on: ubuntu-latest
