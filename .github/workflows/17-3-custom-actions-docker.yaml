@@ -14,5 +14,4 @@ jobs:
             - name: Ping URL
               uses: ./.github/actions/docker-ping-url
               with: 
-                url: 'https://www.google.com'
-              
+                url: ${{inputs.url}}
