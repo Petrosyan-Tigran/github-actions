@@ -18,9 +18,10 @@ on:
             # gh-token: 
             #     description: "Authentication token with repository access. Must have write access to contents and pull-requests"
             #     required: true
-            # debug:
-            #     description: "Whether the output debug messages to the console"
-            #     required: false
+            debug:
+                default: false
+                description: "Whether the output debug messages to the console"
+                required: false
 jobs:
     dependency-update: 
         runs-on: ubuntu-latest
