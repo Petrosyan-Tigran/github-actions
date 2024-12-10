@@ -4,7 +4,7 @@ on:
         inputs:
             url:
                 type: string
-                defaults: 'https://www.google.com'
+                default: 'https://www.google.com'
 jobs:
     ping-url:
         runs-on: ubuntu-latest
