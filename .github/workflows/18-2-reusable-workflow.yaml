@@ -4,6 +4,8 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
             - name: uses reusable workflow
               uses: ./.github/workflows/18-1-reusable-workflows.yaml
               with: 
