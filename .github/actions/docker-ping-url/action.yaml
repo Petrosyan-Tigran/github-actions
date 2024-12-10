@@ -6,7 +6,7 @@ on:
       url:
         type: nstring
         description: "URL to ping"
-        required: false
+        required: true
       max_trials:
         required: false
         description: 'Maximum number of trials until action fails'
