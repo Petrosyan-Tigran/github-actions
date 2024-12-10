@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        type: nstring
         description: "URL to ping"
         required: true
       max_trials:
