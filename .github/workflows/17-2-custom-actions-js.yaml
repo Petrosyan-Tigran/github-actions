@@ -5,18 +5,16 @@ on:
         inputs:
             base-branch:
                 description: "The branch used as the base for the dependency update checks"
-                default: main
+                default: 'main'
                 required: false
             target-branch:
                 description: "The branch from which the PR is created"
                 type: string
-                default: update-dependencies
-                required: false
+                default: 'update-dependencies'
             working-dir: 
                 type: string
                 default: 17-custom-actions/react-app
                 description: "The working directory of the project to check for dependency updates"
-                required: true
             # gh-token: 
             #     description: "Authentication token with repository access. Must have write access to contents and pull-requests"
             #     required: true

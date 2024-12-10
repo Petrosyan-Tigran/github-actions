@@ -3,12 +3,10 @@ description: "Checks if there are updates to NPM packages, and creates a PR with
 inputs:
   base-branch:
     description: "The branch used as the base for the dependency update checks"
-    default: main
     type: string
     required: false
   target-branch:
     description: "The branch from which the PR is created"
-    default: "update-dependencies"
     type: string
     required: false
   working-directory: 
