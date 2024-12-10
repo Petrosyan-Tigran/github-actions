@@ -3,11 +3,8 @@ on:
     workflow_dispatch:
 jobs:
     deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - name: uses reusable workflow
-              uses: ./.github/workflows/18-1-reusable-workflows.yaml
-              with: 
+            uses: ./.github/workflows/18-1-reusable-workflows.yaml
+            with: 
                 target-directory: "path to target directory"
 
     print-outputs:
