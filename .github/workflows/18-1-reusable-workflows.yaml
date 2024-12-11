@@ -31,6 +31,6 @@ jobs:
               id: deploy
               run: |
                 echo "Deploying build artifacts"
-                ehco "url='https://www.google.com'" >> $GITHUB_OUTPUT
+                ehco "url='https://www.google.com'" >> "$GITHUB_OUTPUT"
 
               
